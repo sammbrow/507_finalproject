@@ -1,0 +1,31 @@
+
+<link rel="stylesheet" href="/static/style.css">
+
+<h1> UX Design Collective's Top Stories and Linked Phrases </h1>
+
+<a id="button" href="/search"> Search </a>
+<a id="vis" href="/20words"> See 20 Most Common Words </a> <a id="vis" href="/phrasescatter"> See Phrases in Articles Visualization </a>
+</br>
+</br>
+<a id="tab" href="/"> All Top Stories </a><a id="tab" href="/phrases"> All Phrases </a>
+
+<h2> UX Design Collective's Top Stories </h2>
+
+<table border=1>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Date</th>
+        <th>Description</th>
+        <th>URL</th>
+    </tr>
+{% for s in statement %}
+    <tr>
+        <td>{{s[0]}}</td>
+        <td>{{s[1]}}</td>
+        <td>{{s[2]}}</td>
+        <td>{{s[3]}}</td>
+        <td><a href={{s[4]}} target="_blank">{{s[4]}}</td></a>
+    </tr>
+{% endfor %}
+</table>

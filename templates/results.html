@@ -1,0 +1,42 @@
+
+<link rel="stylesheet" href="/static/style.css">
+
+<h1> Search Results </h1>
+
+<a id="button" href="/search"> New Search </a> <a id="vis" href="/searchterms"> See Past Search Terms </a>
+</br>
+</br>
+<a id="tab" href="/"> Back to All Top Stories </a><a id="tab" href="/phrases"> Back to All Phrases </a>
+
+<h2> Results From Searching Top Stories </h2>
+
+<a id="tab" href="/results"> Top Story Results </a><a id="tab" href="/phraseresults"> Phrase Results </a>
+
+  {% if statement == ["No Results"] %}
+    <p> SEARCH TERM: " {{ search_term }} " </p>
+    <p>No Results.</p>
+
+  {% else %}
+
+  <p> SEARCH TERM: " {{ search_term }} " </p>
+
+    <table border=1>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>URL</th>
+        </tr>
+    {% for s in statement %}
+        <tr>
+            <td>{{s[0]}}</td>
+            <td>{{s[1]}}</td>
+            <td>{{s[2]}}</td>
+            <td>{{s[3]}}</td>
+            <td><a href={{s[4]}} target="_blank">{{s[4]}}</td></a>
+        </tr>
+    {% endfor %}
+    </table>
+
+  {% endif %}

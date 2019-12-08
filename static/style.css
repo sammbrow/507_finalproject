@@ -1,0 +1,89 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 44;
+}
+
+h2 {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 22;
+}
+
+p{
+  font-family: Helvetica, sans-serif;
+}
+
+table, th, td {
+    border-width: 0.5;
+    border-collapse: collapse;
+    border-style: solid;
+    padding: 5;
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 12;
+}
+
+#tab{
+  background-color: white;
+  border: 2px solid #e7e7e7;
+  color: black;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  cursor: pointer;
+  background: white;
+  font-family: Helvetica, sans-serif;
+  border-radius: 20px 20px 5px 5px;
+}
+
+#tab:hover {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+#button{
+  background-color: white;
+  border: 2px solid #e7e7e7;
+  color: black;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 10px;
+  cursor: pointer;
+  background: white;
+  font-family: Helvetica, sans-serif;
+}
+
+#button:hover {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+#vis{
+  border: 2px solid #e7e7e7;
+  color: black;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  background: #e7e7e7;
+  font-family: Helvetica, sans-serif;
+}
+
+#vis:hover {
+  background: grey;
+  color: white;
+}
